@@ -1,0 +1,42 @@
+{% if callnow_button_settings.activated %}
+<a id="callnowbutton" href="tel:{{ callnow_button_settings.phone_number }}">
+    <span class="icon"><i class="fa fa-phone"></i></span>
+    <span>{{ callnow_button_settings.button_text }}</span>
+</a>
+<style>
+    #callnowbutton {
+        display:none;
+    }
+    @media (max-width:768px) {
+        #callnowbutton {
+            display:block;
+            z-index: 1000;
+            position:fixed;
+            bottom:0;
+            background-color: #{{ callnow_button_settings.button_bg_color }};
+            color:#{{ callnow_button_settings.button_text_color }};
+            {% if callnow_button_settings.position == 2 %}
+            left:0;
+            padding-left:2em;
+            padding-right: 2em;
+            border-top-right-radius:1em;
+            border-bottom-right-radius:1em;
+            {% elseif callnow_button_settings.position == 3 %}
+            right:0;
+            padding-left:2em;
+            padding-right: 2em;
+            border-top-left-radius:1em;
+            border-bottom-left-radius:1em;
+            {% else %}
+            border-top-left-radius:1em;
+            border-top-right-radius:1em;
+            width:100%;
+            {% endif %}
+            font-weight:bold;
+            text-align:center;
+            font-size: 2em;
+            line-height:2em;
+        }
+    }
+</style>
+{% endif %}

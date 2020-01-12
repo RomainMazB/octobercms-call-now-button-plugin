@@ -1,0 +1,10 @@
+plugin:
+    name: 'romainmazb.callnow::lang.plugin.name'
+    description: 'romainmazb.callnow::lang.plugin.description'
+    author: RomainMazB
+    icon: oc-icon-phone
+    homepage: ''
+permissions:
+    settings:
+        tab: 'romainmazb.callnow::lang.plugin.name'
+        label: 'romainmazb.callnow::lang.callnow.settings_label'

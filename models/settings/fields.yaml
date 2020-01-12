@@ -1,0 +1,36 @@
+fields:
+    activated:
+        label: 'romainmazb.callnow::lang.callnow.activated_field'
+        span: full
+        default: 0
+        type: switch
+    phone_number:
+        label: 'romainmazb.callnow::lang.callnow.phone_number_field'
+        span: auto
+        placeholder: '+33123456789'
+        required: 1
+        type: text
+    button_text:
+        label: 'romainmazb.callnow::lang.callnow.button_text'
+        span: auto
+        default: 'romainmazb.callnow::lang.callnow.button_text_default'
+        type: text
+    button_bg_color:
+        label: 'romainmazb.callnow::lang.callnow.bg_color_field'
+        span: auto
+        default: 00D1B2
+        type: text
+    button_text_color:
+        label: 'romainmazb.callnow::lang.callnow.text_color_field'
+        span: auto
+        default: FFFFFF
+        type: text
+    position:
+        label: 'romainmazb.callnow::lang.callnow.position_field'
+        options:
+            1: 'romainmazb.callnow::lang.callnow.position_1'
+            2: 'romainmazb.callnow::lang.callnow.position_2'
+            3: 'romainmazb.callnow::lang.callnow.position_3'
+        showSearch: 0
+        span: auto
+        type: dropdown
