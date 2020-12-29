@@ -19,12 +19,12 @@ fields:
         label: 'romainmazb.callnow::lang.callnow.bg_color_field'
         span: auto
         default: 00D1B2
-        type: text
+        type: colorpicker
     button_text_color:
         label: 'romainmazb.callnow::lang.callnow.text_color_field'
         span: auto
         default: FFFFFF
-        type: text
+        type: colorpicker
     position:
         label: 'romainmazb.callnow::lang.callnow.position_field'
         options:
